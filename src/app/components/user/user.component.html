@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h2>User List</h2>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Username</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.username }}</td>
+          <td>{{ user.roles }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
